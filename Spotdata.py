@@ -39,5 +39,5 @@ class binance_api:
             df_bars['Close time (GMT)'] = df_bars['Close time'].apply(lambda x: unix(x).unix_to_gmt())
             
         return df_bars
-
-pp = binance_api().get_spot_kline(ticker='LUNCUSDT', interval='1d')
+#define variable & then enter the desired cryptocurrency ticker
+a = binance_api().get_spot_kline(ticker='ETHUSDT', interval='1d')
