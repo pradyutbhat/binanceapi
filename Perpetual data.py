@@ -41,6 +41,8 @@ class binance_api:
             
         return df_bars
     
+#define variable & then enter the desired cryptocurrency ticker
+    
 btc = binance_api().get_futures_kline(ticker='BTCUSDT', interval='1d')
 eth = binance_api().get_futures_kline(ticker='ETHUSDT', interval='1d')
 bnb = binance_api().get_futures_kline(ticker='BNBUSDT', interval='1d')
